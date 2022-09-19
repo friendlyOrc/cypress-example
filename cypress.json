@@ -1,0 +1,27 @@
+{
+    "testFiles": "**/*.feature",
+    "retries": 0,
+    "defaultCommandTimeout": 15000,
+    "numTestsKeptInMemory": 60,
+    "viewportHeight": 1080,
+    "viewportWidth": 1920,
+    "integrationFolder": "cypress/integration",
+    "experimentalStudio": true,
+    "env": {
+      "BASE_URL": "https://localhost",
+      "LOGIN_USER": "account",
+      "LOGIN_PASS" : "password",
+      "apiUrl" : "https://dummy-employee-api.herokuapp.com"
+    },
+    "screenshotsFolder": "./test-results/screenshots",
+    "video": true,
+    "videosFolder": "./test-results/videos",
+    "videoCompression": 32,
+    "supportFile": "./cypress/support/index.js",
+    "reporter": "junit",
+    "reporterOptions": {
+      "mochaFile": "./test-results/test-results.xml", 
+      "testCaseSwitchClassnameAndName": false
+    },
+    "chromeWebSecurity": false
+}
